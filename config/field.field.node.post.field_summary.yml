@@ -1,0 +1,21 @@
+uuid: 61509684-e748-46f4-8464-dfcb62931b1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.post
+  module:
+    - text
+id: node.post.field_summary
+field_name: field_summary
+entity_type: node
+bundle: post
+label: Summary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

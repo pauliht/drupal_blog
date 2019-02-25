@@ -1,0 +1,35 @@
+uuid: 16eff3ce-af8e-48ff-9a76-b1bcf709be1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.relation_post
+  module:
+    - user
+    - views
+  theme:
+    - bartik
+id: related_posts
+theme: bartik
+region: sidebar_first
+weight: -3
+provider: null
+plugin: 'views_block:relation_post-block_1'
+settings:
+  id: 'views_block:relation_post-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      editor: editor
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

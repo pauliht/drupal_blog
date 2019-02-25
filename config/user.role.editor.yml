@@ -1,0 +1,12 @@
+uuid: d705a045-3e2a-4f23-ac74-9ce47ab03fa3
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: 2
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access toolbar'
+  - 'create post content'
