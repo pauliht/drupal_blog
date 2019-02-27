@@ -1,0 +1,29 @@
+uuid: 1d932527-a897-4e52-8f17-1ff759e88570
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.album.field_hemmalag
+    - node.type.album
+  module:
+    - user
+id: node.album.default
+targetEntityType: node
+bundle: album
+mode: default
+content:
+  field_hemmalag:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

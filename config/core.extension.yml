@@ -7,6 +7,7 @@ module:
   config: 0
   contextual: 0
   ctools: 0
+  current_user: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
@@ -15,6 +16,7 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  hello_world: 0
   help: 0
   image: 0
   language: 0

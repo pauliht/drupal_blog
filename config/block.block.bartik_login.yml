@@ -10,8 +10,8 @@ _core:
   default_config_hash: IItlF4SKHgxduIysVQdvirDJ_v3HGuAviOkidAOJYRE
 id: bartik_login
 theme: bartik
-region: content
-weight: 10
+region: sidebar_first
+weight: -4
 provider: null
 plugin: user_login_block
 settings:
@@ -19,4 +19,13 @@ settings:
   label: 'User login'
   provider: user
   label_display: visible
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      editor: editor
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

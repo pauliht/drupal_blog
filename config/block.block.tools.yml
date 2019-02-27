@@ -6,12 +6,13 @@ dependencies:
     - system.menu.tools
   module:
     - system
+    - user
   theme:
     - bartik
 id: tools
 theme: bartik
 region: sidebar_first
-weight: -4
+weight: -3
 provider: null
 plugin: 'system_menu_block:tools'
 settings:
@@ -21,4 +22,11 @@ settings:
   label_display: visible
   level: 1
   depth: 0
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      editor: editor
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

@@ -1,24 +1,23 @@
-uuid: 6b66855a-72a0-4462-a3a6-75c0e7c5c405
+uuid: 7a033d43-9d79-464e-bfa4-054bc9fb3fb6
 langcode: en
 status: true
 dependencies:
   module:
+    - current_user
     - user
   theme:
     - bartik
-_core:
-  default_config_hash: ZSpc3IoSaLd0PkB02nxjVPBMztIdsTdHek9SiGaqZ_c
-id: bartik_page_title
+id: helloblock
 theme: bartik
-region: header
-weight: -2
+region: sidebar_first
+weight: -5
 provider: null
-plugin: page_title_block
+plugin: hello_block
 settings:
-  id: page_title_block
-  label: 'Page title'
-  provider: core
-  label_display: '0'
+  id: hello_block
+  label: 'Current User'
+  provider: current_user
+  label_display: visible
 visibility:
   user_role:
     id: user_role
