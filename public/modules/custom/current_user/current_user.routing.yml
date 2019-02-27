@@ -1,0 +1,6 @@
+current_user:
+    path: /current/user
+    defaults:
+        _controller: Drupal\current_user\Controller\CurrentUserController::currentUser
+    requirements:
+        _permission: 'access content'

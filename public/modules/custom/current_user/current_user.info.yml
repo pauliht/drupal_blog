@@ -1,0 +1,5 @@
+name: Current User
+type: module
+description: See current user
+package: Custom
+core: 8.x
