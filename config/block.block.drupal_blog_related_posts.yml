@@ -1,0 +1,35 @@
+uuid: 17ec7f45-5f12-4b10-8355-9d4d70c73ee4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.relation_post
+  module:
+    - user
+    - views
+  theme:
+    - drupal_blog
+id: drupal_blog_related_posts
+theme: drupal_blog
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'views_block:relation_post-block_1'
+settings:
+  id: 'views_block:relation_post-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      editor: editor
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

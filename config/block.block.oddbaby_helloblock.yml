@@ -1,0 +1,30 @@
+uuid: aad177f2-a7a0-4945-8341-f7125daa3e2c
+langcode: en
+status: true
+dependencies:
+  module:
+    - current_user
+    - user
+  theme:
+    - oddbaby
+id: oddbaby_helloblock
+theme: oddbaby
+region: header
+weight: -5
+provider: null
+plugin: hello_block
+settings:
+  id: hello_block
+  label: 'Current User'
+  provider: current_user
+  label_display: visible
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      editor: editor
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

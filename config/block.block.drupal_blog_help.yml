@@ -1,0 +1,22 @@
+uuid: 06a7e315-d06c-4568-b005-7d8cab85bf84
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - drupal_blog
+_core:
+  default_config_hash: NU5A_49mwLHfs5xFzMFrZ850w9pgUolxMS9NNF3vv4c
+id: drupal_blog_help
+theme: drupal_blog
+region: header
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

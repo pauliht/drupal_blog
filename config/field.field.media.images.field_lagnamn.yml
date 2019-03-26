@@ -1,0 +1,29 @@
+uuid: 28810aa2-e54c-469b-a6d3-656ebdda0fb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_lagnamn
+    - media.type.images
+    - taxonomy.vocabulary.bortalag
+id: media.images.field_lagnamn
+field_name: field_lagnamn
+entity_type: media
+bundle: images
+label: Lagnamn
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      bortalag: bortalag
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 8d66029f-53bf-4060-968c-cb6012992710
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.add_images
+  module:
+    - text
+id: node.add_images.body
+field_name: body
+entity_type: node
+bundle: add_images
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,11 @@
+uuid: 0ce18157-e5d0-421c-ae4a-b919dda80d74
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.plats
+id: taxonomy_term.plats
+target_entity_type_id: taxonomy_term
+target_bundle: plats
+default_langcode: site_default
+language_alterable: false

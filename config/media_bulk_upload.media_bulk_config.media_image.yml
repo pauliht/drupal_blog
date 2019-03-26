@@ -1,0 +1,9 @@
+uuid: a4668a47-304b-420b-a1d0-a92bdabd9a51
+langcode: en
+status: true
+dependencies: {  }
+id: media_image
+label: Media-image
+media_types:
+  images: 0
+form_mode: ''

@@ -1,0 +1,11 @@
+uuid: 5537e262-3bf7-4478-a929-275bd0552d52
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.bortalag
+id: taxonomy_term.bortalag
+target_entity_type_id: taxonomy_term
+target_bundle: bortalag
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,9 @@
+uuid: 1d418368-e1a8-4145-930d-1e3708461225
+langcode: en
+status: true
+dependencies: {  }
+name: Plats
+vid: plats
+description: ''
+hierarchy: 0
+weight: 0

@@ -1,0 +1,22 @@
+uuid: b5eca523-abfb-47f7-8f77-d43443b99f92
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - oddbaby
+_core:
+  default_config_hash: NU5A_49mwLHfs5xFzMFrZ850w9pgUolxMS9NNF3vv4c
+id: oddbaby_help
+theme: oddbaby
+region: header
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

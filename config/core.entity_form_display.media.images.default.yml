@@ -1,0 +1,93 @@
+uuid: cbafbb26-21f4-40db-bba1-afa375aeb9e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.images.field_lagnamn
+    - field.field.media.images.field_media_image
+    - image.style.thumbnail
+    - media.type.images
+  module:
+    - image
+    - insert
+    - path
+id: media.images.default
+targetEntityType: media
+bundle: images
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_lagnamn:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_media_image:
+    weight: 1
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      insert:
+        default: insert__auto
+        auto_image_style: image
+        link_image: ''
+        caption: '1'
+        width: ''
+        styles:
+          insert__auto: 0
+          link: 0
+          icon_link: 0
+          image: 0
+          audio: 0
+          video: 0
+          colorbox__large: 0
+          colorbox__medium: 0
+          colorbox__thumbnail: 0
+          large: 0
+          medium: 0
+          thumbnail: 0
+        align: 0
+        rotate: 0
+    type: image_image
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden:
+  name: true
