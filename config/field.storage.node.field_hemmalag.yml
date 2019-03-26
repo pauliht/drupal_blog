@@ -1,17 +1,16 @@
-uuid: 7aff44c8-6dd9-4e8b-89b0-d623873bbda8
+uuid: ecce4d59-471a-4242-b4fc-c3d09870ca72
 langcode: en
 status: true
 dependencies:
   module:
     - node
+    - taxonomy
 id: node.field_hemmalag
 field_name: field_hemmalag
 entity_type: node
-type: string
+type: entity_reference
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: 1
