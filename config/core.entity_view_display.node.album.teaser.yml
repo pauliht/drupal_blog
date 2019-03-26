@@ -4,6 +4,12 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.album.field_bilder
+    - field.field.node.album.field_bortalag
+    - field.field.node.album.field_datum
+    - field.field.node.album.field_hemmalag
+    - field.field.node.album.field_liga
+    - field.field.node.album.field_plats
     - node.type.album
   module:
     - user
@@ -14,8 +20,14 @@ mode: teaser
 content:
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
+  field_bilder: true
+  field_bortalag: true
+  field_datum: true
+  field_hemmalag: true
+  field_liga: true
+  field_plats: true
   langcode: true

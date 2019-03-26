@@ -1,0 +1,30 @@
+uuid: f45b3ead-8a21-4148-b2dc-69cc9f22c5d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - current_user
+    - user
+  theme:
+    - drupal_blog
+id: drupal_blog_helloblock
+theme: drupal_blog
+region: footer
+weight: -5
+provider: null
+plugin: hello_block
+settings:
+  id: hello_block
+  label: 'Current User'
+  provider: current_user
+  label_display: visible
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      editor: editor
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

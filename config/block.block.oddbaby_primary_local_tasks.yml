@@ -1,0 +1,22 @@
+uuid: bea1dd65-9d31-4515-8630-855581edb194
+langcode: en
+status: true
+dependencies:
+  theme:
+    - oddbaby
+_core:
+  default_config_hash: ddy1OsBbWxjwEI8VL1viD4I69qcLHOkul4BxbTqLBTs
+id: oddbaby_primary_local_tasks
+theme: oddbaby
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }

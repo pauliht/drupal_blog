@@ -1,0 +1,29 @@
+uuid: 765ad1a9-4712-4fdd-bb9f-934b50333dbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bortalag
+    - node.type.album
+    - taxonomy.vocabulary.bortalag
+id: node.album.field_bortalag
+field_name: field_bortalag
+entity_type: node
+bundle: album
+label: Bortalag
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      bortalag: bortalag
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
