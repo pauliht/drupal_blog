@@ -1,0 +1,20 @@
+uuid: 7ecbca31-b8d6-4141-b94a-d5050e8f6987
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - taxonomy
+id: media.field_lagnamn
+field_name: field_lagnamn
+entity_type: media
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

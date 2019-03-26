@@ -1,0 +1,38 @@
+uuid: 473651b8-3931-4c08-bb01-429c1de71d4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.images.field_lagnamn
+    - field.field.media.images.field_media_image
+    - media.type.images
+  module:
+    - image
+id: media.images.default
+targetEntityType: media
+bundle: images
+mode: default
+content:
+  field_lagnamn:
+    weight: 0
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_media_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

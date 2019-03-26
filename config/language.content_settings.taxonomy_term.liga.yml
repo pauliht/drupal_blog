@@ -1,0 +1,11 @@
+uuid: 185b9f33-7f6a-4187-bee0-b67dfb326189
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.liga
+id: taxonomy_term.liga
+target_entity_type_id: taxonomy_term
+target_bundle: liga
+default_langcode: site_default
+language_alterable: false

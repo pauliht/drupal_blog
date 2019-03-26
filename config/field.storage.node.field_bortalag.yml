@@ -1,0 +1,20 @@
+uuid: 5257a5e3-8888-4ad2-9328-cbf32aad1593
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_bortalag
+field_name: field_bortalag
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

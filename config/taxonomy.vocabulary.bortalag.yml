@@ -1,0 +1,9 @@
+uuid: 1243cbd7-2b6a-4757-95b3-5920d0b5a2cb
+langcode: en
+status: true
+dependencies: {  }
+name: Fotbollslag
+vid: bortalag
+description: ''
+hierarchy: 0
+weight: 0
