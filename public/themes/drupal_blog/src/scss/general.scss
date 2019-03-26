@@ -1,0 +1,39 @@
+// General styling
+
+@import 'variables';
+
+html,
+body {
+  color: $default-font-color;
+  font-family: $default-font-family;
+  font-size: $default-font-size;
+  font-weight: $default-font-weight;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+.header__title{
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-weight: 200;
+  margin: auto;
+}
+
+.site-content{
+  display:flex;
+}
+

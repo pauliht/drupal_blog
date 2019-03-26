@@ -1,0 +1,25 @@
+// Main stylesheet
+
+// Import external styling.
+@import '~normalize.css/normalize.css';
+
+// Import general styling.
+@import 'general', 'typography';
+
+// Import component styling.
+@import 'components/button';
+@import 'components/pagination';
+@import 'components/regions';
+
+// Import media styling.
+@import 'media/image';
+@import 'media/video';
+
+
+// Import content styling.
+@import 'content/article'; 
+@import 'content/menu';
+@import 'content/user-block'; 
+
+
+

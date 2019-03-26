@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * Main file for the Odd Baby theme.
+ */
+
+require_once __DIR__ . '/drupal_blog.suggestions.inc';
+
+/**
+ * Modifies non system css @imports to be added as link tags.
+ *
+ * Implements hook_css_alter().
+ */
+function drupal_blog_css_alter(&$css) {
+  $system_css_preprocess = \Drupal::config('system.performance')->get('css.preprocess');
+
+  // Only apply the modifications if css pre-processing is turned off.
+  if ($system_css_preprocess) {
+    return;
+  }
+
+  // Modify all css imports except the core files since we don't need
+  // Browser Sync to reload these files.
+  foreach ($css as $key => $value) {
+    $is_core = (strpos($value['data'], 'misc/') === 0 || strpos($value['data'], 'modules/') === 0 || strpos($value['data'], 'core/') === 0);
+
+    if (!$is_core) {
+      $css[$key]['preprocess'] = FALSE;
+    }
+  }
+}

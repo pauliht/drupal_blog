@@ -24,24 +24,10 @@ class HelloUser extends BlockBase{
     $logged_in = \Drupal::currentUser()->isAuthenticated();
 
     if (!$logged_in){  
-      print "<h2>You are logged in as Anonymous</h2>";
+      print "<div class='block__user'><p>Logged in as Anonymous</p></div>";
     } else {
-      print "<h1>You are logged in as " . $user . "</h1>"; 
+      print "<div class='block__user'><p>Logged in as " . $user . "</p></div>"; 
     }
   }
 }
-
-
-
-
-// $current_user =  \Drupal::currentUser()->id();
-    
-// print "Current user logged in: $current_user";
-
-
-
-// return array (
-//   '#title' => 'Logged in as:',
-//   '#markup' => $user,
-
 ?>

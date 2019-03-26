@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ *
+ * @ingroup themeable
+ */
+#}
+<form{{ attributes.addClass('menu__form') }}>
+  {{ children }}
+
+<div>
+  <button {{attributes.addClass('menu__footer-button')}}>Contact</button>
+</div>
+</form>

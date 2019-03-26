@@ -1,0 +1,26 @@
+name: drupal_blog
+type: theme
+core: 8.x
+
+regions:
+  header: Header
+  content: Content
+  footer: Footer
+  primary_menu: Primary menu
+  secondary_menu: Secondary menu
+  help: Help
+  sidebar_first: Sidebar first
+  sidebar_secondary: Sidebar secondary
+
+component-libraries:
+  drupal_blog-components:
+    paths:
+      - components
+
+libraries:
+  - drupal_blog/font.source-sans-pro
+  - drupal_blog/icons.font-awesome
+  - drupal_blog/global
+
+ckeditor_stylesheets:
+  - build/css/ckeditor.css
