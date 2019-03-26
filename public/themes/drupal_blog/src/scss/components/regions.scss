@@ -1,0 +1,14 @@
+//Region Styling
+
+@import 'variables';
+
+.main__region-sidebar{
+    width: 200px;
+    // width: 200px;
+    // flex-grow: 1;
+  }
+  
+  .main__region-content{
+    // width: 600px;
+    flex-grow: 1;
+  }
