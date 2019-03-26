@@ -1,0 +1,11 @@
+uuid: 8c0d8efd-698d-4072-b2b2-5d0e38b5eb52
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.add_images
+id: node.add_images
+target_entity_type_id: node
+target_bundle: add_images
+default_langcode: site_default
+language_alterable: false

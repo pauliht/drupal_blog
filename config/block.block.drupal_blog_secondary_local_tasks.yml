@@ -1,0 +1,22 @@
+uuid: 4c36654d-28a3-41c9-94c5-b9386b57c20c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupal_blog
+_core:
+  default_config_hash: QeZBeCilQfeET3GeW6ZtJkEiwROADTZktFgKWwPieD4
+id: drupal_blog_secondary_local_tasks
+theme: drupal_blog
+region: header
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  provider: core
+  label_display: '0'
+  primary: false
+  secondary: true
+visibility: {  }

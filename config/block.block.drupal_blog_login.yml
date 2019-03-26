@@ -1,0 +1,31 @@
+uuid: 5efbe062-b215-4c0e-9832-2cf21d76bd84
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - drupal_blog
+_core:
+  default_config_hash: IItlF4SKHgxduIysVQdvirDJ_v3HGuAviOkidAOJYRE
+id: drupal_blog_login
+theme: drupal_blog
+region: header
+weight: -4
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      editor: editor
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

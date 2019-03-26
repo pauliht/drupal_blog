@@ -1,0 +1,32 @@
+uuid: 15cb4160-4974-457e-b23b-977b5e5954d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - oddbaby
+_core:
+  default_config_hash: YRY68JWkaUiGeZlWMv1nzeIgDm0ZZwXYgpqUpLFzwAY
+id: oddbaby_content
+theme: oddbaby
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      editor: editor
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

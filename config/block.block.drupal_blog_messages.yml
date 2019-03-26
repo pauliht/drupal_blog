@@ -1,0 +1,22 @@
+uuid: 76a10909-19ad-4a0c-a2d3-1f5a71453733
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal_blog
+_core:
+  default_config_hash: XJqWwLt1LDCnazcEN6QkJmCLjk4R0__-8s0OO9xeNjg
+id: drupal_blog_messages
+theme: drupal_blog
+region: header
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

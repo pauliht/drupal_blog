@@ -1,0 +1,31 @@
+uuid: d3d35f8b-b996-43eb-a0f3-f572820f944e
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - oddbaby
+_core:
+  default_config_hash: ZSpc3IoSaLd0PkB02nxjVPBMztIdsTdHek9SiGaqZ_c
+id: oddbaby_page_title
+theme: oddbaby
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      editor: editor
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

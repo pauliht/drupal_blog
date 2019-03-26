@@ -1,0 +1,9 @@
+uuid: 0e90e3a3-eba4-417e-a3e2-3bb80e414534
+langcode: en
+status: true
+dependencies: {  }
+name: Liga
+vid: liga
+description: ''
+hierarchy: 0
+weight: 0

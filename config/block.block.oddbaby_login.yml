@@ -1,0 +1,31 @@
+uuid: bfb1e2f2-96f5-4934-b097-9b60a300083d
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - oddbaby
+_core:
+  default_config_hash: IItlF4SKHgxduIysVQdvirDJ_v3HGuAviOkidAOJYRE
+id: oddbaby_login
+theme: oddbaby
+region: header
+weight: -4
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      editor: editor
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

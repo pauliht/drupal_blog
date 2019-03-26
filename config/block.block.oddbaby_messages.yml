@@ -1,0 +1,22 @@
+uuid: 1c028443-4ca8-4884-99f7-5e9f003bee07
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oddbaby
+_core:
+  default_config_hash: XJqWwLt1LDCnazcEN6QkJmCLjk4R0__-8s0OO9xeNjg
+id: oddbaby_messages
+theme: oddbaby
+region: header
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
